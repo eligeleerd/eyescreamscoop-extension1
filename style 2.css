@@ -1,29 +1,24 @@
 /* a minimalist set of CSS resets */
 
 /* default to border-box */
-html {
-    background-color: #ffaacc;
-    border: 10px solid #facaf1;
-    box-sizing: border-box;
-    font-size: 16px;
+html 
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "The-Inside-Scoop The-Inside-Scoop Join-Now-\@-"
+      "The-Inside-Scoop The-Inside-Scoop Join-Now-\@-"
+      "Access- Access- Join-Now-\@-";
   }
   
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  .The-Inside-Scoop { grid-area: The-Inside-Scoop; }
   
-  /* adjust typography defaults */
-  body {
-    margin: 1rem;
-    font-family: serif;
-    line-height: 1.5;
+  .Join-Now-\@- { grid-area: Join-Now-\@-; }
   
-  }
+  .Access- { grid-area: Access-; }
   
-  /* images and videos max out at full width */
-  img,
-  video {
-    height: auto;
-    max-width: 100%;
-  }
+  
   
