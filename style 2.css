@@ -1,24 +1,17 @@
-/* a minimalist set of CSS resets */
 
-/* default to border-box */
-html 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "The-Inside-Scoop The-Inside-Scoop Join-Now-\@-"
-      "The-Inside-Scoop The-Inside-Scoop Join-Now-\@-"
-      "Access- Access- Join-Now-\@-";
-  }
-  
-  .The-Inside-Scoop { grid-area: The-Inside-Scoop; }
-  
-  .Join-Now-\@- { grid-area: Join-Now-\@-; }
-  
-  .Access- { grid-area: Access-; }
-  
-  
-  
+html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+
+</style>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+
+<p>This page has a light blue background color!</p>
+
+</body>
+</html>
