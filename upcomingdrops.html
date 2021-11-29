@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <body><link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" /></body>
+    
   </head>
     <style>
        @font-face{ 
@@ -10,7 +11,7 @@
          url('Fonts/meltdownmf-oeyd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-       }
+  }
     .dropdown {
       position: relative;
       display: inline-block;
@@ -29,17 +30,7 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
-    @font-face{ 
-	font-family: 'MyWebFont';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-	     url('WebFont.woff') format('woff'),
-	     url('WebFont.ttf') format('truetype'),
-	     url('WebFont.svg#webfont') format('svg');}
-
-</style>
-
-  <style>
+   
     body {
       background-color: #FACAF1;
       font-family: 'meltdownmfregular', Arial, sans-serif;
@@ -54,12 +45,11 @@ div {
   margin: 10px;
 }
 
-
+p{ font-family: 'meltdownmfregular', Arial, sans-serif;}
 
 
 * {box-sizing: border-box;}
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 .month {
   padding: 70px 25px;
@@ -203,7 +193,7 @@ p{ font-family: 'meltdownmfregular', Arial, sans-serif;}
   <li>18</li>
   <li>19</li>
   <li>20</li>
-  <li>21</li>
+  <li><span class="active">21</span></li>
   <li>22</li>
   <li>23</li>
   <li>24</li>
@@ -213,8 +203,18 @@ p{ font-family: 'meltdownmfregular', Arial, sans-serif;}
   <li>28</li>
   <li>29</li>
   <li>30</li>
-  <li>31</li>
+  <li><span class="active">31</span></li>
 </ul>
+
+
+
+<div>
+
+  <h2>10th : Hannukah Sale (8 days of 20% all store)</h2> 
+  <h2>December 21st : Christmas Sale (3 Days of buy one, get one free)</h2>
+<h2> December 31st : (Whole store sale on New Year's Eve)</h2>
+
+</div>
 
 </body>
 </html>
