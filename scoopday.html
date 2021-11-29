@@ -95,10 +95,8 @@ div {
       
     
       </body>
-      </head>
+  
 
-
-      <html>
 <head> 
 <title> Random Image Generator </title>
 </head>
@@ -108,7 +106,7 @@ function getRandomImage() {
 var randomImage = new Array();
 
 //insert the URL of images in array
-randomImage[0] = "TripleScoop";
+randomImage[0] = "TripleScoop.png";
 randomImage[1] = "Shamrock.png";
 randomImage[2] = "OvertheRainbow.png";
 randomImage[3] = "DoubleScoop.png";
@@ -124,8 +122,8 @@ return document.getElementById("result").innerHTML = '<img src="'+randomImage[nu
 
 </script>
 <body>
-<center><h2 style="color:#FACAF1"> Random Image Generator </h2></center>
-<h4> Click the button to generate and display random images on the webpage </h4>
+<center><h2 style="color:#FACAF1"> Scoop of the Day Generator </h2></center>
+<h4> Click the button to generate and your different scoop possibilites </h4>
 <!-- call user-defined getRandomImage function after 2 seconds -->  
 <button onclick = "setInterval(getRandomImage, 2000)"> Generate Image </button>
 <br> <br>
